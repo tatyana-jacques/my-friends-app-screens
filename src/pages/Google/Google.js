@@ -1,10 +1,10 @@
 import {SafeAreaView, Text} from "react-native"
 
-export default function Registration (){
+export default function Google (){
     return(
     <SafeAreaView>
        
-        <Text>Registration</Text>
+        <Text>Google</Text>
         
     </SafeAreaView>
     )
