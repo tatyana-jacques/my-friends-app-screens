@@ -1,11 +1,25 @@
-import {SafeAreaView, Text} from "react-native"
+import {SafeAreaView, Image, StyleSheet} from "react-native"
+import googleLogo from "../../../assets/google.png"
+import { commonStyles } from "../../styles/CommonStyles"
+
 
 export default function Google (){
     return(
-    <SafeAreaView>
+    <SafeAreaView style = {commonStyles.container}>
        
-        <Text>Google</Text>
+       <Image source={googleLogo} style={styles.googleImage} />
         
     </SafeAreaView>
     )
 }
+
+const styles = StyleSheet.create({
+
+
+    googleImage: {
+        width: "80%",
+        height: "80%",
+       
+    },
+
+})
