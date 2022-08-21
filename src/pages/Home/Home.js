@@ -1,4 +1,4 @@
-import { SafeAreaView, StyleSheet, Image, TouchableOpacity, Text, View } from "react-native"
+import { StatusBar, SafeAreaView, StyleSheet, Image, TouchableOpacity, Text, View } from "react-native"
 import logo from "../../../assets/logo.png"
 import { commonStyles } from "../../styles/CommonStyles"
 import googleLogo from "../../../assets/google.png"
@@ -20,6 +20,7 @@ export default function Home({ navigation }) {
     }
     return (
         <SafeAreaView style={commonStyles.container}>
+            <StatusBar backgroundColor={"#1c3354ff"}/>
             
 
             <Image source={logo} style={styles.logoImage} />
@@ -34,11 +35,11 @@ export default function Home({ navigation }) {
                     <Text style={{ ...commonStyles.buttonText, color: "#1c3354ff" }}>Sign Up With Email</Text>
                 </TouchableOpacity>
 
-                <View style={styles.signIn}>
+                <View style={commonStyles.signIn}>
                     <Text style={{color: "#1c3354ff"}} >Alredy have an account? </Text>
                     <TouchableOpacity onPress={navigateToRegistration} >
 
-                        <Text  style = {styles.signInText}>Sign In.</Text>
+                        <Text  style = {commonStyles.signInText}>Sign In.</Text>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -54,24 +55,4 @@ const styles = StyleSheet.create({
         height: 120,
         margin: 30,
     },
-
-    
-
-    signIn: {
-
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "row",
-        margin: 10,
-        fontSize: 24,
-
-    },
-
-    signInText: {
-        textDecorationLine: "underline",
-        color: "#F23838"
-    },
-
-
-
 })
