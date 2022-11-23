@@ -52,8 +52,7 @@ export const commonStyles = StyleSheet.create({
         width: 40,
         height: 40,
         borderRadius: 50,
-       
-
+    
     },
 
     text: {
@@ -61,14 +60,12 @@ export const commonStyles = StyleSheet.create({
         fontSize: 50,
         paddingTop: 5,
         marginBottom: "5%",
-       
     },
 
     littleText: {
         color: "#1c3354ff",
         fontSize: 15,
         marginTop: 5,
-
     },
 
     signIn: {
